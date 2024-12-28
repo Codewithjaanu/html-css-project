@@ -1,0 +1,393 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+
+.navbar .menus {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menus li {
+    list-style-type: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.navbar .menus li:hover {
+    color: #ff6600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .menus {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+    }
+
+    .navbar .menus li {
+        width: 100%;
+        text-align: left;
+        padding: 12px 20px;
+    }
+
+    .navbar .logo-img img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .navbar .menus li {
+        padding: 10px 15px;
+    }
+}
+
+.bottomline {
+    margin: auto;
+    border: none;
+    border: 1px solid black;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    align-items: center;
+}
+
+.hero-right {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+}
+
+.hero-right img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-right-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: white;
+}
+
+.hero-right-text h1 {
+    font-size: 3rem;
+}
+
+.hero-right-text p {
+    font-size: 1.2rem;
+}
+
+.hero-right-text button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.hero-right-text button:hover {
+    background-color: white;
+    color: black;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.hero-item {
+    position: relative;
+    width: 48%;
+}
+
+.hero-item img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-item-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: white;
+}
+
+.hero-item-text h1 {
+    font-size: 2rem;
+}
+
+.hero-item-text p {
+    font-size: 1rem;
+}
+
+
+
+.menslatest .headding-men {
+    width: 80%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+    margin-top: 2rem;
+}
+
+.headding-men h1 {
+    font-size: 2rem;
+}
+
+.productsmens {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 5rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+.productsmens .one {
+    position: relative;
+    text-align: start;
+}
+
+.productsmens .one img {
+    width: 50vh;
+    transition: transform 1s ease;
+}
+
+.productsmens .one:hover img {
+    transform: scale(1.1);
+}
+
+.productsmens .one div {
+    margin-top: 1rem;
+}
+
+.productsmens .one p {
+    font-size: 1.2rem;
+}
+
+.productsmens .one .buttons {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 1rem;
+}
+
+.productsmens .one:hover .buttons {
+    display: flex;
+}
+
+.productsmens .one .buttons button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.productsmens .one .buttons button:hover {
+    background-color: #ff6347;
+}
+
+.explore-section {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.explore-text {
+    width: 35%;
+    gap: 2rem;
+}
+
+
+.explore-text button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+}
+
+.social .headding-menw{
+    width: 80%;
+  
+    margin: auto;
+}
+
+.social .headding-menw h1{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.social-imgs{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.social-imgs img{
+    width: 170px;
+    padding: 1rem;
+}
+
+
+.newsletter {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.newsletter-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.newsletter-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.newsletter-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.newsletter-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.newsletter-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background-color: #0056b3;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #222;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.footer-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.footer-heading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-list li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-list li:hover {
+    color: #007bff;
+}
+
+.id{
+    margin-bottom: 2rem;
+}
+
